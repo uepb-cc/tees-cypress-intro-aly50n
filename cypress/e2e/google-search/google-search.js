@@ -9,15 +9,8 @@ When("Eu digito {string} na caixa de pesquisa", (searchTerm) => {
     this.searchTerm = searchTerm;
     cy.get('.gLFyf').type(searchTerm);
 });
-When(/^Eu clico no botao estou com sorte$/, () => {
-    cy.get('input[name="btnI"]').eq(0).click();
-});
 
-When(/^Eu clico no botao pesquisar$/, () => {
-    cy.get('input[name="btnK"]').eq(0).click();
-});
-
-Then("Eu devo ver a string {string} no site {string}", (result, site) => {
+Then("o texto {string} pode ser visto no site {string}", (result, site) => {
     if(site === 'google.com') {
         cy.get('body').should('contain', result);
     } else {
@@ -25,5 +18,18 @@ Then("Eu devo ver a string {string} no site {string}", (result, site) => {
         cy.origin(site, { args: { result } }, ( { result }) => {
             cy.get('body').contains(result);
         });
+    }
+});
+
+When(/^Eu clico no botao "([^"]*)"$/, function (button) {
+    switch (button) {
+        case 'estou com sorte':
+            cy.get('input[name="btnI"]').eq(0).click();
+            break;
+        case 'pesquisar':
+            cy.get('input[name="btnK"]').eq(0).click({ force: true });
+            break;
+        default:
+            throw new Error(`Botao desconhecido: ${button}`);
     }
 });
