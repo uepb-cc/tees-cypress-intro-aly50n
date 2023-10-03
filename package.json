@@ -1,5 +1,5 @@
 {
-  "name": "cypress-demo-1",
+  "name": "cypress",
   "version": "0.0.1",
   "description": "Cypress Demo - Topicos Especiais Eng de Software 1",
   "main": "index.js",
@@ -8,11 +8,11 @@
   },
   "keywords": [
     "cypress",
-    "rodrigo",
+    "alyson",
     "uepb",
     "tees"
   ],
-  "author": "rodrigo alves costa",
+  "author": "Alyson Jonas Alves Morato",
   "license": "MIT",
   "devDependencies": {
     "@bahmutov/cypress-esbuild-preprocessor": "^2.2.0",
