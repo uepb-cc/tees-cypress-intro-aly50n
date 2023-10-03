@@ -8,6 +8,7 @@ const createEsbuildPlugin =
 
 module.exports = defineConfig({
     e2e: {
+        baseUrl: "https://aly50n.github.io/",
         async setupNodeEvents(on, config) {
             const bundler = createBundler({
                 plugins: [createEsbuildPlugin(config)],
