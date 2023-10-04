@@ -1,6 +1,6 @@
-
-Given("I enter the URL ANDROID", () => {
-    cy.visit('https://aly50n.github.io/Projeto-Site-Android/');
+import {Given, When, Then} from "@badeball/cypress-cucumber-preprocessor";
+Given("I go to the URL_ANDROID", () => {
+    cy.visit('/Projeto-Site-Android');
 });
 
 When(/^I visit the website$/, () => {
