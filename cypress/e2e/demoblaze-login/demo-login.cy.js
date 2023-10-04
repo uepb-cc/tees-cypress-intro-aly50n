@@ -37,5 +37,4 @@ When("Eu digito o meu PASSWORD no campo password do login", () => {
 
 Then("Eu clico no botao Log in e realizo o login com sucesso", () => {
 	cy.get('.btn-primary').eq(2).click();
-	return true;
 });
