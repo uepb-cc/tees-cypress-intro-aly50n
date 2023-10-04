@@ -10,6 +10,6 @@ Funcionalidade: Demoblaze Adicionar ao carrinho
 
     Cenario: Adicionando e removendo do carrinho
     Quando Eu clico no primeiro produto
-    E As informaçoes do produto abrem e eu clico no botao Add to cart para adicionar o produto do carrinho
+    E As informaçoes do produto abrem e eu clico no botao Add to cart para adicionar o produto no carrinho
     E Eu clico no botao Cart
     Entao O meu carrinho abre e eu clico no botao delete para remover o produto do carrinho
