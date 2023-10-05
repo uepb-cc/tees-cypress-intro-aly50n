@@ -10,7 +10,7 @@ When("Eu clico no primeiro produto", () => {
 	cy.wait(1000);
 });
 
-When("As informaçoes do produto abrem e eu clico no botao Add to cart para adicionar o produto do carrinho", () => {
+When("As informaçoes do produto abrem eu clico no botao Add to cart para adicionar o produto no carrinho", () => {
 	cy.get('.col-sm-12 > .btn').should('exist').click(); 
 });
 
