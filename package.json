@@ -1,0 +1,28 @@
+{
+  "name": "cypress",
+  "version": "0.0.1",
+  "description": "Cypress Demo - Topicos Especiais Eng de Software 1",
+  "main": "index.js",
+  "scripts": {
+    "test": "npx cypress run --record --key e560cd5c-27d9-43e3-af69-3d48048236aa"
+  },
+  "keywords": [
+    "cypress",
+    "alyson",
+    "uepb",
+    "tees"
+  ],
+  "author": "Alyson Jonas Alves Morato",
+  "license": "MIT",
+  "devDependencies": {
+    "@bahmutov/cypress-esbuild-preprocessor": "^2.2.0",
+    "cypress": "^12.17.4"
+  },
+  "dependencies": {
+    "@badeball/cypress-cucumber-preprocessor": "^18.0.4"
+  },
+  "cypress-cucumber-preprocessor": {
+    "nonGlobalStepDefinitions": true
+  }
+
+}
