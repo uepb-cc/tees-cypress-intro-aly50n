@@ -4,7 +4,7 @@
   "description": "Cypress Demo - Topicos Especiais Eng de Software 1",
   "main": "index.js",
   "scripts": {
-    "test": "cypress open"
+    "test": "npx cypress run --record --key e560cd5c-27d9-43e3-af69-3d48048236aa"
   },
   "keywords": [
     "cypress",
@@ -24,4 +24,5 @@
   "cypress-cucumber-preprocessor": {
     "nonGlobalStepDefinitions": true
   }
+
 }
